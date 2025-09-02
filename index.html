@@ -28,7 +28,8 @@
 					<a href="#" class="image avatar"><img src="images/me.jpeg" alt="" /></a>
 <!-- 					<a href="#" class="image avatar"><img src="images/me2.jpg" alt="" /></a> -->
 					<h2>Dr. Auday Berro</h2>
-					<h1>Actively Looking for Opportunities</h1>
+<!-- 					<h1>Actively Looking for Opportunities</h1> -->
+						<h1 id="slogan">If my AI can chat, I guess I should too</h1>
 
 					</center>
 				</div>
@@ -236,8 +237,37 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<!-- Slogan Script -->
+			<script>
+			  const slogans = [
+			    "Debugging humans with AI since forever",
+			    "Turning data into insomnia cures (and papers)",
+			    "If my AI can chat, I guess I should too",
+			    "Currently optimizing my sleep with gradient descent",
+			    "Overfitting life, underfitting sleep",
+			    "Making chatbots less annoying (you’re welcome).",
+			    "Researching the future, one bug report at a time.",
+				"AI speaks many languages, but I’m still working on human.".
+				"Chatbots for machines, conversations for humans."
+			  ];
+			
+			  const sloganElement = document.getElementById("slogan");
+			
+			  function changeSlogan() {
+			    const randomIndex = Math.floor(Math.random() * slogans.length);
+			    sloganElement.textContent = slogans[randomIndex];
+			  }
+			
+			  // change immediately when page loads
+			  changeSlogan();
+			
+			  // change every 1 minute (60,000 ms)
+			  setInterval(changeSlogan, 60000);
+			</script>
+
 
 	</body>
 </html>
+
 
 
